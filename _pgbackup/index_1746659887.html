@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="mediaqueries.css"/>
+        <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
+        <link rel="stylesheet" href="pgia/components/controls.css">
+        <link rel="stylesheet" href="pgia/components/gallery.css">
+        <link rel="stylesheet" href="pgia/components/slider.css">
+        <link rel="stylesheet" href="blocks.css">
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <video src="assets/00000000-0121.webm" autoplay="true" loop="true" muted="true" style="max-width: 15%;">Your browser doesn't support HTML5 video tag.</video>
+            <div>
+                <ul class="nav-links text-white-50" style="color: #aa1e1e;">
+                    <li style="color: #5d0000;">
+                        <a href="#about" class="text-secondary">About</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <video src="assets/00000000-0121.webm" autoplay="true" loop="true" muted="true" style="max-width: 35%;">Your browser doesn't support HTML5 video tag.</video>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li>
+                        <a href="#about" onclick="toggleMenu()">About</a>
+                    </li>
+                    <li>
+                        <a href="#experience" onclick="toggleMenu()">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#projects" onclick="toggleMenu()">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" onclick="toggleMenu()">Contact</a>
+                    </li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="assets/about-pic.png" alt="John Doe profile picture" style="border-radius: 117px;"/>
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Belal</h1>
+                <p class="section__text__p2">3D-Generalist</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-1" type="button" onclick="scrollByAmount(850, 650)" style="background-color: #708090;">
+                        Let's Dive
+</button>
+                    <script>
+  function scrollByAmount(desktopAmount, mobileAmount) {
+    const amount = window.innerWidth <= 768 ? mobileAmount : desktopAmount;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const target = Math.min(window.scrollY + amount, maxScroll);
+
+    window.scrollTo({ top: target, behavior: 'smooth' });
+  }
+</script>
+                    <script>
+  function smoothScroll(offset, duration) {
+    window.scrollBy({
+      top: offset,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" style="cursor:pointer;" onclick="window.open('https://www.linkedin.com/in/belal-abdelkarim/', '_blank')">
+                    <img src="./assets/github.png" alt="My Github profile" class="icon" style="cursor:pointer;" onclick="window.open('https://linktr.ee/Belal3D', '_blank')">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">let me tell you</p>
+            <h1 class="title">Who I am</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="assets/IMG-20250103-WA0025.png" alt="Profile picture" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                            <h3>Experience</h3>
+                            <p>7+ years&nbsp;user of Blernder and other creative softwares</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="Education icon" class="icon">
+                            <h3>Education</h3>
+                            <p>Studying Mechanical Engineering at <a href="https://w3.agu.edu.tr/" target="_blank">AGU</a><br></p>
+                        </div>
+                        <p><p data-pm-slice="1 1 []" style="text-align: justify; top: -48px;" class="text-justify">I&rsquo;m a Mechanical Engineering student passionate about 3D design and animation, with a focus on tools like Blender and Houdini. I&rsquo;m from Egypt, and I love gaming, anime, and diving into TV series and manga. I&rsquo;m on a journey to grow both as an artist and as an engineer, with the goal of becoming a full-time 3D artist.</p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">My work with&nbsp;</p>
+            <h1 class="title">Clients</h1>
+            <div class="experience-details-container">
+                <div class="pgia-slider" data-pg-ia='{"l":[{"name":"CloneSlidesForInfinite","trg":"now","a":{"l":[{"t":".pgia-slides-container #gt# .pgia-slide-#gt#first(${target.data-slider-slides-per-page|1})","l":[{"t":"set","p":0,"d":0,"s":0.1,"l":{"pgDom":{"clone":1,"ins":"append"}}}]}]},"pdef":"true","rstr":"true","redm":"true"},{"name":"AutoPlay","trg":"now","timer":"6","a":{"l":[{"t":"this","l":[{"t":"set","p":5.98,"d":0,"l":{"pgia":{"play":"GotoNext"}}}]},{"t":".pgia-progress-bar","l":[{"t":"set","p":0,"d":0,"l":{"width":0}},{"t":"tween","p":0,"d":5.98,"l":{"width":"100%"},"e":"Linear.easeNone"}]}]},"rpt":"-1","tcv":"slider-user-active","nopg":"true","redm":"true"},{"name":"UserActive","trg":"mouseenter","a":{"l":[{"t":"this","l":[{"t":"set","p":0,"d":0,"l":{"pgia":{"pause":"AutoPlay"}}}]},{"t":".pgia-progress","l":[{"t":"tween","p":0,"d":0.5,"l":{"autoAlpha":0}}]}]},"rstr":"true","po":"true","pol":"UserInactive","redm":"true"},{"name":"UserInactive","trg":"mouseleave_notouch","a":{"l":[{"t":"this","l":[{"t":"tween","p":0.5,"d":0.5,"l":{"pgia":{"play":"AutoPlay"}}}]},{"t":".pgia-progress","l":[{"t":"tween","p":0.5,"d":0.5,"l":{"autoAlpha":1}}]}]},"rstr":"true","po":"true","pol":"UserActive","redm":"true"},{"name":"SwipeLeftToNext","trg":"swipe_left","a":{"l":[{"t":"this","l":[{"t":"tween","p":0,"d":0.5,"l":{"pgia":{"play":"GotoNext"}}}]}]},"tc":"no-attr","tca":"data-slider-direction","tcv":"vertical","pdef":"true","redm":"true"},{"name":"SwipeRightToPrev","trg":"swipe_right","a":{"l":[{"t":"this","l":[{"t":"tween","p":0,"d":0.5,"l":{"pgia":{"play":"GotoPrev"}}}]}]},"tc":"no-attr","tca":"data-slider-direction","tcv":"vertical","pdef":"true","redm":"true"},{"name":"GotoNext","trg":"no","a":{"l":[{"t":".pgia-slides-container","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"next_page_or_start"}}}]}]},"redm":"true"},{"name":"GotoPrev","trg":"no","a":{"l":[{"t":".pgia-slides-container","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"prev_page"}}}]}]},"redm":"true"},{"name":"GotoFirst","trg":"no","a":{"l":[{"t":".pgia-slides-container","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"first"}}}]}]},"redm":"true"},{"name":"GotoLast","trg":"no","a":{"l":[{"t":".pgia-slides-container","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"last"}}}]}]},"redm":"true"},{"name":"SwipeDownToNext","trg":"swipe_down","a":{"l":[{"t":"this","l":[{"t":"tween","p":0,"d":0.5,"l":{"pgia":{"play":"GotoNext"}}}]}]},"tc":"attr","tca":"data-slider-direction","tcv":"vertical","pdef":"true","redm":"true"},{"name":"SwipeUpToPrev","trg":"swipe_up","a":{"l":[{"t":"this","l":[{"t":"tween","p":0,"d":0.5,"l":{"pgia":{"play":"GotoPrev"}}}]}]},"tc":"attr","tca":"data-slider-direction","tcv":"vertical","pdef":"true","redm":"true"}]}' data-slider-scrollbar="auto" data-slider-slides-per-page="4" data-slider-direction="horizontal">
+                    <div class="pgia-slides-container" data-pg-ia-scene='{"s":"whole","snap":"e","pag":"p","pag_t":".pgia-slide","pag_i":"^.pgia-slider|.pgia-pagination-item","pag_clone":"true","pag_pa":"Current","pag_pd":"-Current","pag_inf":"true","dir":"a"}' style="border-radius: 2rem;">
+                        <div class="pgia-slide" data-pg-ia='{"l":[{"name":"ShowContent","trg":"no","a":{"l":[{"t":"h2","l":[{"t":"tween","p":0.4,"d":0.6,"l":{"autoAlpha":1},"e":"Linear.easeNone"}]}],"desc":"Show the content of the slide. Customize this animation to reveal the content."},"rstr":"true","po":"true","pol":"HideContent","redm":"true"},{"name":"HideContent","trg":"no","a":{"l":[{"t":"h2","l":[{"t":"tween","p":0,"d":0.1,"l":{"autoAlpha":0}}]}],"desc":"Hide the content of the slide. Customize this animation to reveal the content."},"rstr":"true","po":"true","pol":"ShowContent","redm":"true"}]}' data-pg-ia-scene='{"dir":"a","s":"custom","s_t":"start","s_s":"end","e_t":"end","e_s":"start","l":[{"a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":0.5,"l":{"pgia":{"play":"HideContent"}}},{"t":"tween","p":0.5,"d":9,"l":{"pgia":{"play":"ShowContent"}}},{"t":"tween","p":9.5,"d":0.5,"l":{"pgia":{"play":"HideContent"}}}]}]},"p":"scroll","sc_dir":"up_down","rep":"true"}],"redm":"true"}' data-pg-ia-apply="^.pgia-slider|.pgia-slide">
+                            <h2 data-pg-ia-hide class="placeholder">Slide 1</h2>
+                            <img src="https://cdna.artstation.com/p/assets/images/images/077/329/718/large/b-n-still-render.jpg?1719197437" style="max-width: 139%; padding-left: 104px; padding-bottom: 90px;"/>
+                        </div>
+                        <div class="pgia-slide">
+                            <h2 data-pg-ia-hide class="placeholder">Slide 2</h2>
+                            <img src="https://cdna.artstation.com/p/assets/images/images/070/289/808/large/b-n-fitshong-for-jibs-perfume-scene-1.jpg?1702206710" style="max-height: 431px; margin-top: -58px;"/>
+                        </div>
+                        <div class="pgia-slide">
+                            <img src="https://cdna.artstation.com/p/assets/images/images/070/346/770/large/b-n-moon-ring-3.jpg?1702322772" style="max-height: 116%; padding-right: 13px; padding-top: 67px;"/>
+                            <h2 data-pg-ia-hide class="placeholder">Slide 3</h2>
+                        </div>
+                        <div class="pgia-slide">
+                            <img src="https://cdna.artstation.com/p/assets/images/images/070/498/766/large/b-n-profile20056.jpg?1702660228" style="max-width: 129%; padding-top: 56px;"/>
+                            <h2 data-pg-ia-hide class="placeholder">Slide 4</h2>
+                        </div>
+                        <div class="pgia-slide">
+                            <img src="https://cdnb.artstation.com/p/assets/images/images/087/637/141/large/b-n-scene-two-custom.jpg?1746318088" style="max-width: 132%; padding-top: 70px;"/>
+                            <h2 data-pg-ia-hide class="placeholder">Slide 5</h2>
+                        </div>
+                        <div class="pgia-slide">
+                            <img src="assets/laced.png" style="max-width: 108%; padding-top: 70px;"/>
+                            <h2 data-pg-ia-hide class="placeholder">Slide 6</h2>
+                        </div>
+                        <div class="pgia-slide">
+                            <img src="assets/donut%20realstic.jpg" style="max-width: 100%; padding-top: 85px;"/>
+                            <h2 data-pg-ia-hide class="placeholder">Slide 7</h2>
+                        </div>
+                        <div class="pgia-slide">
+                            <img src="https://cdnb.artstation.com/p/assets/images/images/065/667/389/large/b-n-ring-shot-2-vol.jpg?1690923292" style="max-width: 126%; padding-top: 89px;"/>
+                            <h2 data-pg-ia-hide class="placeholder">Slide 8</h2>
+                        </div>
+                    </div>
+                    <div class="pgia-controls">
+                        <a class="prev pgia-control" href="#" data-scroll-to="prev" data-pg-ia='{"l":[{"name":"ScrollTo","trg":"click","a":{"l":[{"t":"^.pgia-slider","l":[{"t":"tween","p":0,"d":0.5,"l":{"pgia":{"play":"Goto${target.data-scroll-to}"}}}]}]},"pdef":"true","redm":"true"}]}' data-pg-ia-apply="^.pgia-slider|.pgia-control">&lsaquo;</a>
+                        <div class="pgia-pagination">
+                            <a class="pgia-pagination-item" href="#" data-pg-ia='{"l":[{"name":"ScrollToSlide","trg":"click","a":{"l":[{"t":"^.pgia-slider|.pgia-slides-container","l":[{"t":"tween","p":0,"d":0.5,"l":{"scrollTo":{"dest":"page"}}}]}]},"pdef":"true","redm":"true"},{"name":"Current","trg":"no","a":{"l":[{"t":"","l":[{"t":"tween","p":0,"d":0.2,"l":{"scale":1.5}}]}],"desc":"Customize the active item animation."},"redm":"true"}]}'></a>
+                        </div>
+                        <a class="next pgia-control" href="#" data-scroll-to="next">&rsaquo;</a>
+                    </div>
+                    <div class="pgia-progress">
+                        <div class="pgia-progress-bar" style="background-color: rgba(0, 0, 0, 0);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <p class="section__text__p1">see more of my</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="https://cdna.artstation.com/p/assets/images/images/081/452/516/large/b-n-untitled55.jpg?1730303491" alt="Project 1" class="project-img"/>
+                            <img alt="Project 1" class="project-img" src="https://cdnb.artstation.com/p/assets/images/images/081/452/509/large/b-n-0460.jpg?1730303484"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title">The Chess</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.behance.net/gallery/211356489/The-Chess'">
+                                see full project
+</button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="https://cdna.artstation.com/p/assets/images/images/070/402/112/large/b-n-rings-shot-1-vol.jpg?1702454431" alt="Project 2" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Thr Ring</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.artstation.com/artwork/Dv69Y0'">
+                                see full project
+</button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <video src="https://cdn.artstation.com/p/video_sources/002/026/132/turn-table0001-0090.mp4" style="border-radius: 2rem; max-width: 90%; max-height: 90%;" loop="true" muted="true" class="autoplay-on-visible" autoplay="true">
+                                Your browser doesn't support HTML5 video tag.
+</video>
+                            <script>
+ <script>
+  const videos = document.querySelectorAll('.autoplay-once-visible');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+      if (entry.isIntersecting) {
+        video.play();
+        observer.unobserve(video); // Stop observing after it starts playing
+      }
+    });
+  }, { threshold: 0.3 }); // Start when 30% is visible
+
+  videos.forEach(video => observer.observe(video));
+</script>
+                        </div>
+                        <h2 class="experience-sub-title project-title">The Parrot</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.artstation.com/artwork/zPadnq'">
+                                see full project
+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                    <p><a href="mailto:3d.belal@gmail.com">3d.belal@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                    <p><a href="https://www.linkedin.com/in/belal-abdelkarim/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#experience">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+        <script src="script.js"></script>
+        <script src="pgia/lib/pgia.js"></script>
+    </body>
+</html>
