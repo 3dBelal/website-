@@ -56,19 +56,13 @@ a:hover {
 }
 
 .logo {
-    /* Adjust width of video */
-    /* Keep aspect ratio */
-    bottom: 10px;
-
-    /* Position from the bottom */
-    left: 10px;
-
-    /* Position from the left */
-    z-index: 9999;
-    transition: transform 0.1s ease-out;
+    /* REMOVE position: fixed */
+    /* Default positioning (scrolls with page) */
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
     max-width: 30%;
-
-    /* Smooth transition */
+    transition: transform 0.1s ease-out;
 }
 
 .logo:hover {
@@ -210,9 +204,10 @@ section {
     text-align: center;
     color: #3dd0d5;
     transition: text-shadow 95ms cubic-bezier(0.82, 0.00, 0.03, 0.97) 56ms;
-    box-shadow: 0 0 236px -9px;
     border-radius: 2rem;
-    background-color: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0px 0px 300px 21px #3dd0d5;
+    -moz-box-shadow: 0px 0px 300px 21px #3dd0d5;
+    box-shadow: 0px 0px 300px 21px #3dd0d5;
 
     .title:hover {
         text-shadow: 4px 4px 10px #000000;
@@ -250,6 +245,10 @@ section {
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: 0px 0px 300px 21px #3dd0d5;
+    -moz-box-shadow: 0px 0px 300px 21px #3dd0d5;
+    box-shadow: 0px 0px 300px 21px #3dd0d5;
 }
 
 .btn-color-1,
