@@ -15,7 +15,11 @@
     </head>
     <body>
         <nav id="desktop-nav">
-            <video src="assets/00000000-0121.webm" autoplay="true" loop="true" muted="true" style="max-width: 15%;">Your browser doesn't support HTML5 video tag.</video>
+            <div class="video-container">
+                <video src="https://res.cloudinary.com/dfx78xogi/video/upload/v1746767579/00000000-0121_pekzf0.webm" autoplay loop muted class="logo">
+                    Your browser doesn't support HTML5 video tag.
+</video>
+            </div>
             <div>
                 <ul class="nav-links text-white-50" style="color: #aa1e1e;">
                     <li style="color: #5d0000;">
@@ -34,32 +38,11 @@
             </div>
         </nav>
         <nav id="hamburger-nav">
-            <video src="assets/00000000-0121.webm" autoplay="true" loop="true" muted="true" style="max-width: 35%;">Your browser doesn't support HTML5 video tag.</video>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li>
-                        <a href="#about" onclick="toggleMenu()">About</a>
-                    </li>
-                    <li>
-                        <a href="#experience" onclick="toggleMenu()">Experience</a>
-                    </li>
-                    <li>
-                        <a href="#projects" onclick="toggleMenu()">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact" onclick="toggleMenu()">Contact</a>
-                    </li>
-                </div>
-            </div>
+            <video src="assets/00000000-0121.webm" autoplay="true" loop="true" muted="true" class="logo" style="min-height: 15%; min-width: 30%;">Your browser doesn't support HTML5 video tag.</video>
         </nav>
         <section id="profile">
             <div class="section__pic-container">
-                <img src="assets/about-pic.png" alt="John Doe profile picture" style="border-radius: 117px;"/>
+                <img src="https://res.cloudinary.com/dfx78xogi/image/upload/v1746767585/about-pic_km5yba.png" alt="John Doe profile picture" style="border-radius: 117px;"/>
             </div>
             <div class="section__text">
                 <p class="section__text__p1">Hello, I'm</p>
@@ -99,21 +82,21 @@
             <h1 class="title">Who I am</h1>
             <div class="section-container">
                 <div class="section__pic-container">
-                    <img src="assets/IMG-20250103-WA0025.png" alt="Profile picture" class="about-pic">
+                    <img src="https://res.cloudinary.com/dfx78xogi/image/upload/v1746767586/IMG-20250103-WA0025_s65zrk.png" alt="Profile picture" class="about-pic">
                 </div>
                 <div class="about-details-container">
                     <div class="about-containers">
-                        <div class="details-container">
+                        <div class="details-container knowme">
                             <img src="./assets/experience.png" alt="Experience icon" class="icon">
                             <h3>Experience</h3>
-                            <p>7+ years&nbsp;user of Blernder and other creative softwares</p>
+                            <p style="color: #000000;">7+ years&nbsp;user of Blernder and other softwares</p>
                         </div>
-                        <div class="details-container">
+                        <div class="details-container knowme">
                             <img src="./assets/education.png" alt="Education icon" class="icon">
                             <h3>Education</h3>
                             <p>Studying Mechanical Engineering at <a href="https://w3.agu.edu.tr/" target="_blank">AGU</a><br></p>
                         </div>
-                        <p><p data-pm-slice="1 1 []" style="text-align: justify; top: -48px;" class="text-justify">I&rsquo;m a Mechanical Engineering student passionate about 3D design and animation, with a focus on tools like Blender and Houdini. I&rsquo;m from Egypt, and I love gaming, anime, and diving into TV series and manga. I&rsquo;m on a journey to grow both as an artist and as an engineer, with the goal of becoming a full-time 3D artist.</p></p>
+                        <p><p data-pm-slice="1 1 []" style="text-align: justify; top: -48px; color: #3dd0d5;" class="text-justify">I&rsquo;m a Mechanical Engineering student passionate about 3D design and animation, with a focus on tools like Blender and Houdini. I&rsquo;m from Egypt, and I love gaming, anime, and diving into TV series and manga. I&rsquo;m on a journey to grow both as an artist and as an engineer, with the goal of becoming a full-time 3D artist.</p></p>
                     </div>
                 </div>
             </div>
@@ -129,7 +112,7 @@
                             <img src="https://cdna.artstation.com/p/assets/images/images/077/329/718/large/b-n-still-render.jpg?1719197437" style="max-width: 139%; padding-left: 104px; padding-bottom: 90px;"/>
                         </div>
                         <div class="pgia-slide">
-                            <h2 data-pg-ia-hide class="placeholder">Slide 2</h2>
+                            <h2 data-pg-ia-hide class="placeholder" style="color: rgba(0, 0, 0, 0);">Slide 2</h2>
                             <img src="https://cdna.artstation.com/p/assets/images/images/070/289/808/large/b-n-fitshong-for-jibs-perfume-scene-1.jpg?1702206710" style="max-height: 431px; margin-top: -58px;"/>
                         </div>
                         <div class="pgia-slide">
@@ -175,33 +158,30 @@
             <h1 class="title">Projects</h1>
             <div class="experience-details-container">
                 <div class="about-containers">
-                    <div class="details-container color-container">
+                    <div class="details-container color-container" style="background-color: #708090;">
                         <div class="article-container">
                             <img src="https://cdna.artstation.com/p/assets/images/images/081/452/516/large/b-n-untitled55.jpg?1730303491" alt="Project 1" class="project-img"/>
                             <img alt="Project 1" class="project-img" src="https://cdnb.artstation.com/p/assets/images/images/081/452/509/large/b-n-0460.jpg?1730303484"/>
                         </div>
                         <h2 class="experience-sub-title project-title">The Chess</h2>
                         <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.behance.net/gallery/211356489/The-Chess'">
-                                see full project
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.behance.net/gallery/211356489/The-Chess', '_blank')">
+                                See full project
 </button>
                         </div>
                     </div>
-                    <div class="details-container color-container">
+                    <div class="details-container color-container" style="background-color: #708090;">
                         <div class="article-container">
                             <img src="https://cdna.artstation.com/p/assets/images/images/070/402/112/large/b-n-rings-shot-1-vol.jpg?1702454431" alt="Project 2" class="project-img">
                         </div>
-                        <h2 class="experience-sub-title project-title">Project Two</h2>
+                        <h2 class="experience-sub-title project-title">Thr Ring</h2>
                         <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                                Github
-</button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                                Live Demo
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.artstation.com/artwork/Dv69Y0', '_blank')">
+                                See full project
 </button>
                         </div>
                     </div>
-                    <div class="details-container color-container">
+                    <div class="details-container color-container" style="background-color: #708090;">
                         <div class="article-container">
                             <video src="https://cdn.artstation.com/p/video_sources/002/026/132/turn-table0001-0090.mp4" style="border-radius: 2rem; max-width: 90%; max-height: 90%;" loop="true" muted="true" class="autoplay-on-visible" autoplay="true">
                                 Your browser doesn't support HTML5 video tag.
@@ -223,13 +203,10 @@
   videos.forEach(video => observer.observe(video));
 </script>
                         </div>
-                        <h2 class="experience-sub-title project-title">Project Three</h2>
+                        <h2 class="experience-sub-title project-title">The Parrot</h2>
                         <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                                Github
-</button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                                Live Demo
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://www.artstation.com/artwork/zPadnq', '_blank')">
+                                See full project
 </button>
                         </div>
                     </div>
@@ -246,10 +223,11 @@
                     <p><a href="mailto:3d.belal@gmail.com">3d.belal@gmail.com</a></p>
                 </div>
                 <div class="contact-info-container">
-                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                    <img src="assets/whatsapp.png" alt="LinkedIn icon" class="icon contact-icon"/>
                     <p><a href="https://www.linkedin.com/in/belal-abdelkarim/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
                 </div>
             </div>
+            <script id="pixel-chaty" async="true" src="https://cdn.chaty.app/pixel.js?id=MkbvMvXY"></script>
         </section>
         <footer>
             <nav>
