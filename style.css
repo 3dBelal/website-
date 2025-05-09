@@ -51,16 +51,6 @@ a:hover {
     text-decoration-color: rgb(181, 181, 181);
 }
 
-.logo {
-    /* REMOVE position: fixed */
-    /* Default positioning (scrolls with page) */
-    display: block;
-    margin-top: 10px;
-    margin-left: 10px;
-    max-width: 30%;
-    transition: transform 0.1s ease-out;
-}
-
 .logo:hover {
     cursor: default;
 }
@@ -474,4 +464,45 @@ testt {
 }
 
 .test {
+}
+
+.logo2 {
+    position: fixed;
+
+    /* Fix the position of the logo (video) */
+    top: 10px;
+
+    /* 10px from the top of the screen */
+    left: 50%;
+
+    /* Position it at 50% of the screen width */
+    transform: translateX(-50%);
+
+    /* Center it by shifting it back by 50% of its own width */
+    max-width: 37%;
+
+    /* Make it smaller */
+    min-width: 15%;
+
+    /* Optional: make sure it doesn't get too small */
+    transition: transform 0.1s ease-out;
+}
+
+.logo {
+    position: fixed;
+
+    /* Fix the position of the logo (video) */
+    top: 10px;
+
+    /* 10px from the top of the screen */
+    left: 10px;
+
+    /* 10px from the left of the screen */
+    max-width: 1%;
+
+    /* Make it smaller */
+    min-width: 15%;
+
+    /* Optional: make sure it doesn't get too small */
+    transition: transform 0.1s ease-out;
 }
