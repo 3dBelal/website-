@@ -20,13 +20,13 @@ p {
 
 /* TRANSITION */
 a,
-.btn {
+.btn {
     transition: all 300ms cubic-bezier(0.03, 0.21, 0.32, 0.97) 0;
 }
 
 /* DESKTOP NAV */
 nav,
-.nav-links {
+.nav-links {
     display: flex;
 }
 
@@ -208,7 +208,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
-    color: #a4008d;
+    color: #f1c610;
 }
 
 #socials-container {
@@ -241,17 +241,17 @@ section {
 }
 
 .btn-color-1,
-.btn-color-2 {
+.btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .btn-color-1:hover,
-.btn-color-2:hover {
+.btn-color-2:hover {
     cursor: pointer;
 }
 
 .btn-color-1,
-.btn-color-2:hover {
+.btn-color-2:hover {
     background: rgb(53, 53, 53);
     color: white;
 }
@@ -290,7 +290,7 @@ section {
 }
 
 .about-containers,
-.about-details-container {
+.about-details-container {
     display: flex;
 }
 
