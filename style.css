@@ -1,10 +1,6 @@
 /* GENERAL */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-* {
-    padding: 0;
-}
-
 body {
     font-family: "Poppins", sans-serif;
     background-color: #171c20;
@@ -461,4 +457,21 @@ logo constant {
 }
 
 align-content: {
+}
+
+testt {
+    width: 236px;
+}
+
+.test {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 101%;
+    height: 101%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.test {
 }
